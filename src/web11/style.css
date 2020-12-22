@@ -144,9 +144,10 @@ header {
 }
 
 .port-item img {
-    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
     transition: 0.25s;
-    background-size: cover;
+    background-size: contain;
 }
 
 .port-item img:hover {
@@ -155,7 +156,7 @@ header {
 
 .port-grid {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 10px;
     grid-template-areas: 'img1 img1 img2' 'img3 img4 img2' 'img5 img6 img6';
     justify-content: center;
 }
