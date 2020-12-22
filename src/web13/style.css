@@ -317,7 +317,7 @@ footer {
 
 @media only screen and (max-width:720px) {
     .popular-place-grid {
-        grid-template-areas: 'img1 img3' 'img2 img2' 'img2 img2' 'img4 img5';
+        grid-template-areas: 'img1 img3' 'img2 img2' 'img4 img5';
     }
     #mobile-menu-button {
         display: initial;
