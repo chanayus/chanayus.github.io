@@ -145,7 +145,6 @@ header {
 
 .port-item img {
     width: 100%;
-    min-height: 100%;
     transition: 0.25s;
     background-size: cover;
 }
