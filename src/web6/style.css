@@ -36,6 +36,9 @@ nav {
     background: #111;
     height: 70px;
 }
+img{
+    max-width: 100%;
+}
 
 .nav-flex {
     display: flex;
@@ -152,8 +155,14 @@ header {
 }
 
 .social-flex {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+    justify-content: center;
+
+}
+
+.social-text{
+    padding: 10px;
 }
 
 .social-icon {
@@ -161,19 +170,16 @@ header {
     font-size: 50px;
     color: #BBB;
     margin: 0;
-    flex: 1;
-    flex-wrap: wrap;
+    padding: 0;
+    justify-content:flex-end;
     align-items: center;
-    justify-content: flex-end;
-    padding: 10px 0;
 }
 
-.social-text{
-    flex: 1;
-}
+
 .social-icon li {
     list-style: none;
-    padding-left: 5%;
+    padding-left: 20px;
+    margin: 0;
 }
 
 .social-icon li:first-child {
@@ -522,6 +528,9 @@ footer {
     .container {
         margin: 0 30px;
     }
+    .social-icon{
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width:820px) {
@@ -531,18 +540,19 @@ footer {
     .mobile-toggle {
         display: initial;
     }
-    .social-flex,
+    /* .social-flex,
     .customer-flex {
         flex-direction: column;
-    }
+    } */
     .social-icon {
         font-size: 5vw;
-        flex-wrap: nowrap;
+
+    }
+    .social-icon{
         justify-content: center;
     }
-    .social-icon li {
-        margin-left: 10%;
-    }
+
+    
 }
 
 @media only screen and (max-width:720px) {
