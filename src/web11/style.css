@@ -144,8 +144,8 @@ header {
 }
 
 .port-item img {
-    max-width: 100%;
-    min-height: 100%;
+    min-width: 100%;
+    /* height: auto; */
     transition: 0.25s;
     background-size: contain;
 }
