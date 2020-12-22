@@ -1,0 +1,311 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Atia</title>
+</head>
+
+<body>
+    <div id="mobile-menu">
+        <ul class="mobile-menu-flex">
+            <li><a href="">Flight</a></li>
+            <li><a href="">Hotels</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">Restaurants</a></li>
+            <li><a href="">Thing to do</a></li>
+            <li><a href="">About Greece</a></li>
+            <li><button>Become a host</button></li>
+        </ul>
+    </div>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="nav-flex">
+                    <div class="logo">
+                        <h1>Atia</h1>
+                    </div>
+                    <ul class="menu-flex">
+                        <li class="desktop-menu"><a href="" class="desktoplink">Flight</a></li>
+                        <li class="desktop-menu"><a href="" class="desktoplink">Hotels</a></li>
+                        <li class="desktop-menu"><a href="" class="desktoplink">Explore</a></li>
+                        <li class="desktop-menu"><a href="" class="desktoplink">Restaurants</a></li>
+                        <li class="desktop-menu"><a href="" class="desktoplink">Thing to do</a></li>
+                        <li class="desktop-menu"><a href="" class="desktoplink">About Greece</a></li>
+                        <li class="desktop-menu"><button>Become a host</button></li>
+                        <li id="mobile-menu-button"><button onclick="switch_menu()" id="switch-button"><i class="fas fa-bars"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content" id="header-content">
+            <center>
+                <h1 id="greece-logo"></h1>
+                <p>WELCOME TO HEAVEN</p>
+                <button>Check offer</button>
+            </center>
+        </div>
+    </header>
+    <section class="menutabs">
+        <div class="container">
+            <div class="menutab-container">
+                <div class="menutabs-flex">
+                    <div class="menutabs-item" style="flex:1;">
+                        <input type="text" name="" id="" placeholder="City">
+                    </div>
+                    <div class="menutabs-item">
+                        <input type="text" name="" id="" placeholder="Check In">
+                    </div>
+                    <div class="menutabs-item">
+                        <input type="text" name="" id="" placeholder="Check Out">
+                    </div>
+                    <div class="menutabs-item">
+                        <input type="text" name="" id="" placeholder="Rooms">
+                    </div>
+                    <div class="menutabs-item">
+                        <input type="text" name="" id="" placeholder="Adults">
+                    </div>
+                    <div class="menutabs-item">
+                        <input type="text" name="" id="" placeholder="Children">
+                    </div>
+
+                    <div class="menutabs-item">
+                        <input type="text" name="" id="" placeholder="Starts">
+                    </div>
+                </div>
+
+
+                <div class="menutabs-item">
+                    <center>
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-place">
+        <div class="container">
+            <center>
+                <h3>MOST POPULAR PLACES</h3>
+            </center>
+            <div class="popular-place-grid">
+                <div class="thessa place-grid">
+                    <img src="img/thessalonniki.png" alt="">
+                    <div class="placename-grid">
+                        <h2>Thessaloniki</h2>
+                    </div>
+                </div>
+                <div class="hal place-grid">
+                    <img src="img/halkidiki.png" alt="">
+                    <div class="placename-grid">
+                        <h2>Halkidki</h2>
+                    </div>
+                </div>
+                <div class="crete place-grid">
+                    <img src="img/Crete.png" alt="">
+                    <div class="placename-grid">
+                        <h2>Crete</h2>
+                    </div>
+                </div>
+                <div class="athens place-grid">
+                    <img src="img/athens.png" alt="">
+                    <div class="placename-grid">
+                        <h2>Athens</h2>
+                    </div>
+                </div>
+                <div class="mkonos place-grid">
+                    <img src="img/mykonos.png" alt="">
+                    <div class="placename-grid">
+                        <h2>Mkonos</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="poppular-flex place-flex">
+                <div class="meteora place-flex">
+                    <img src="img/meteora.png" alt="">
+                    <div class="placename-flex">
+                        <h2>Meteora</h2>
+                    </div>
+                </div>
+                <div class="myrtos place-flex">
+                    <img src="img/mytros.png" alt="">
+                    <div class="placename-flex">
+                        <h2>Myrtos Beach</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-hotel">
+        <div class="container">
+            <center>
+                <h3>MOST POPULAR HOTELS</h3>
+            </center>
+            <div class="popular-hotel-grid">
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+                <div class="popular-hotel-card">
+                    <div class="card-img"></div>
+                    <div class="card-content">
+                        <div class="name-star">
+                            <p>Creco</p>
+                        </div>
+                        <div class="price">
+                            <h2>225$</h2>
+                        </div>
+
+                    </div>
+                    <center>
+                        <button>View more</button>
+                    </center>
+                </div>
+            </div>
+            <center>
+                <button style="margin-top: 100px;">View all offers</button>
+            </center>
+        </div>
+    </section>
+
+    <section class="text-content">
+        <div class="container">
+            <div class="text-content-flex">
+                <div class="button-left"><button class="nextpage-button"><i class="fas fa-chevron-left"></i></button></div>
+                <div class="content">
+                    <h1>And then God said <br> let there bo a Greece</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa enim, lobortis in volutpat
+                        <br> porttitor, auctor dictum magna. Sed gravida condimentum leo sed tristique. Ut cursus sem ut turpis
+                        <br> posuere, vel ultrices quam aliquam.</p>
+                </div>
+                <div class="button-right"><button class="nextpage-button"><i class="fas fa-chevron-right"></i></button></div>
+            </div>
+            <center>
+                <div class="page-navigation">
+                    <div class="pagedot-one"></div>
+                    <div class="pagedot-two"></div>
+                    <div class="pagedot-three"></div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+
+    <footer>
+        <center>
+            <h2>Atia</h2>
+            <p>ⓒ Copyright 2016. All rights reserved by symu.co</p>
+        </center>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

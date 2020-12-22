@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #222;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+button {
+    border: 2px solid #FFF;
+    background: transparent;
+    padding: 15px 60px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 17px;
+}
+
+section {
+    color: #FFF;
+}
+
+
+/* --------------------------- nav ------------------------------- */
+
+nav {
+    padding-top: 50px;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-item button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 27px;
+    padding: 0;
+}
+
+
+/* --------------------------- header ------------------------------- */
+
+header {
+    background-image: url("img/header.png");
+    background-size: cover;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 250px 0;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    line-height: 25px;
+    color: #FFF;
+}
+
+.header-conten-item h1:nth-child(2) {
+    color: #ed1f34;
+    font-size: 75px;
+}
+
+.header-conten-item h1:first-child {
+    font-weight: 100;
+}
+
+.header-content button {
+    margin: 70px 0;
+}
+
+
+/* --------------------------- about ------------------------------- */
+
+.about {
+    padding: 75px 0;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-item img {
+    max-width: 100%;
+}
+
+.about-item {
+    margin: 20px 0;
+}
+
+
+/* --------------------------- newest ------------------------------- */
+
+.newest {
+    background: url("img/newest.png");
+    background-size: cover;
+    padding: 330px 0;
+    background-repeat: no-repeat;
+}
+
+.newest-text h1 {
+    color: #ed1f34e5;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+
+.newest-text p {
+    color: #FFF;
+}
+
+
+/* --------------------------- concert ------------------------------- */
+
+.concert-img-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.concert-img-item {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.concert-img-item:first-child {
+    border-top: 7px solid #ed1f34;
+    box-sizing: border-box;
+}
+
+.concert1 {
+    background-image: url("img/1.png");
+}
+
+.concert2 {
+    background-image: url("img/2.png");
+}
+
+.concert3 {
+    background-image: url("img/3.png");
+}
+
+.concert4 {
+    background-image: url("img/4.png");
+}
+
+
+/* --------------------------- hire ------------------------------- */
+
+.hire {
+    background: url("img/hire.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 500px 0;
+}
+
+.hire h1 {
+    font-size: 50px;
+}
+
+
+/* --------------------------- footer ------------------------------- */
+
+footer {
+    color: #FFF;
+    padding: 30px 0;
+}
+
+footer h3 {
+    font-weight: 100;
+}
+
+@media only screen and (max-width:1024px) {
+    .container {
+        padding: 0 25px;
+    }
+    .concert-img-item img {
+        width: 100%;
+    }
+}

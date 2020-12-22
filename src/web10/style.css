@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+button {
+    border-radius: 30px;
+    padding: 15px 40px;
+    border: none;
+    border: 1px solid #1d4c8b;
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+.mobile-button button {
+    background: transparent;
+    border: none;
+    color: #1d4c8b;
+    font-size: 32px;
+    padding: 0;
+    display: none;
+}
+
+.blue {
+    background: #1d4c8b;
+    color: #fff;
+}
+
+nav {
+    background: #f5d1c9;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+ul.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+ul.nav-item li {
+    margin: 0 40px;
+    list-style: none;
+}
+
+ul.nav-item li a {
+    text-decoration: none;
+    color: #1d4c8b;
+    transition: 0.35s;
+    padding-bottom: 20px;
+    border-bottom: 2px solid transparent;
+}
+
+ul.nav-item li a:hover {
+    border-bottom: 2px solid #1d4c8b;
+    padding-bottom: 0px;
+}
+
+header {
+    background: #f5d1c9;
+    position: relative;
+    padding: 50px 0 200px 0;
+    color: #1d4c8b;
+}
+
+header h1 {
+    margin: 0;
+    padding: 40px;
+    font-size: 90px;
+}
+
+.plate {
+    width: 65%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.plate img {
+    max-width: 80%;
+}
+
+
+/* -------------------header-------------------- */
+
+.menu {
+    border: 2px solid #1d4c8b;
+    width: 80%;
+    margin: 32% auto;
+    text-align: center;
+    color: #1d4c8b;
+}
+
+.cereal-milk {
+    border: 2px solid #1d4c8b;
+    background: #f5d1c9;
+}
+
+.underline {
+    width: 100%;
+    height: 2px;
+    background: #1d4c8b;
+}
+
+
+/* -------------------combos-------------------- */
+
+.combos {
+    background: #a8baca;
+    padding: 50px 0;
+    text-align: center;
+    color: #1d4c8b;
+}
+
+.combo-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 75px
+}
+
+.combo-item {
+    background: #f5d1c9;
+    border: 1px solid #1d4c8b;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.combos h1 {
+    font-size: 50px;
+    margin: 15px;
+}
+
+.combos>.container>p {
+    font-size: 25px;
+    margin: 0;
+}
+
+
+/* -------------------history-------------------- */
+
+.history-grid {
+    display: grid;
+    background: #f5d1c9;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    color: #1d4c8b;
+}
+
+.history-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.history-item {
+    flex: 50%;
+    background: #f5d1c9;
+}
+
+.history-text {
+    padding: 0 70px;
+}
+
+
+/* -------------------footer-------------------- */
+
+footer {
+    background: #fff8ee;
+    color: #1d4c8b;
+}
+
+.copyright {
+    background: #a8baca;
+    color: #1d4c8b;
+    padding: 20px 0
+}
+
+.footer-flex {
+    padding: 50px 0;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footer-item {
+    padding: 0 50px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.mobile-menutab {
+    position: fixed;
+    width: 0%;
+    background: #1d4c8b;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.mobile-menutab button {
+    border: none;
+    background: transparent;
+    color: #f5d1c9;
+    font-size: 32px;
+}
+
+.nav-mobile-item li {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-mobile-item li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #f5d1c9;
+}
+
+input[type=text] {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #1d4c8b;
+    height: 25px;
+    outline: none;
+}
+
+@media only screen and (max-width:1220px) {
+    nav {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .mobile-button button {
+        display: initial;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    .nav-flex {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav-item:first-child {
+        flex: 1;
+    }
+}
