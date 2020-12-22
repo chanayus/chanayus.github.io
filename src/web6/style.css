@@ -153,8 +153,7 @@ header {
 
 .social-flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .social-icon {
@@ -164,12 +163,17 @@ header {
     margin: 0;
     flex: 1;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-end;
+    padding: 10px 0;
 }
 
+.social-text{
+    flex: 1;
+}
 .social-icon li {
     list-style: none;
-    margin-left: 5%;
+    padding-left: 5%;
 }
 
 .social-icon li:first-child {
@@ -320,7 +324,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .price-flex h1,
