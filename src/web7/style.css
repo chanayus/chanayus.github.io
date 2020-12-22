@@ -287,10 +287,10 @@
      
     input[type=submit] {
         border: none;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-
-        background: #f64b3c;
+        -webkit-border-top-right-radius: 30px;
+        -webkit-border-bottom-right-radius: 30px;
+        
+        background-color: #f64b3c;
         color: #FFF;
         font-size: 17px;
         padding: 10px;
