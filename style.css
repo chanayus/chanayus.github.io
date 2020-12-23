@@ -23,7 +23,7 @@ body{
 	}
 }
 img{
-    background-size: contain;
+    object-fit: cover;
     width: 100%;
     height: 200px;
     transition: 0.25s;
