@@ -130,7 +130,7 @@ header {
 
 .header-image img {
     width: 80%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .header-image {
