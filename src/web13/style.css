@@ -336,6 +336,9 @@ footer {
     .desktop-menu {
         display: none;
     }
+    .crete img{
+        min-height: auto;
+    }
 }
 
 
@@ -405,4 +408,5 @@ footer {
     .desktop-menu {
         display: none;
     }
+    
 }
