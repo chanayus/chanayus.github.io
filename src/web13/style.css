@@ -337,7 +337,7 @@ footer {
         display: none;
     }
     .crete img{
-        height: auto;
+        min-height: 50%;
     }
 }
 
