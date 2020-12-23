@@ -4,7 +4,7 @@ function switch_menu() {
     body_wraper.style.transition = "0.35s";
 
     menu.style.transition = "0.35s";
-    if (menu.style.width == "40%") {
+    if (menu.style.width == "50%") {
         menu.style.opacity = "0";
 
         menu.style.width = "0%";
@@ -18,7 +18,7 @@ function switch_menu() {
         menu.style.display = "initial";
         setTimeout(function() {
             menu.style.opacity = "1";
-            menu.style.width = "40%"
+            menu.style.width = "50%"
             body_wraper.style.left = "40%"
         }, 0)
 

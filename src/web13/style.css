@@ -5,13 +5,17 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+input{
+    font-family: 'Poppins', sans-serif;
+}
+
 .container {
     max-width: 1220px;
     margin: 0 auto;
 }
 
 button {
-    padding: 10px 10%;
+    padding: 10px 20px;
     border: none;
     border-radius: 30px;
     background: white;
@@ -61,20 +65,20 @@ nav {
 }
 
 .menu-flex li {
-    margin: 0 20px;
+    margin-left: 20px;
     list-style: none;
 }
 
 .menu-flex li a {
     text-decoration: none;
     color: black;
-    transition: 0.45s;
+    transition: 0.25s;
     border-bottom: 2px solid transparent;
     padding-bottom: 50px;
 }
 
 .menu-flex li a:hover {
-    font-size: 22px;
+    font-size: 20px;
     border-bottom: 2px solid #111;
     padding-bottom: 0px;
 }
@@ -91,6 +95,7 @@ nav {
 #mobile-menu-button {
     font-size: 27px;
     display: none;
+    
 }
 
 span {
@@ -105,6 +110,7 @@ span.fade {
     transition: all 0.5 ease;
     left: 0;
 }
+
 
 
 /* -------------------------- header, nav --------------------------*/
@@ -130,6 +136,7 @@ input[type=text] {
     width: 80%;
     margin: 15px 0;
     outline: none;
+    font-size: 15px;
 }
 
 ::placeholder {
@@ -165,6 +172,10 @@ input[type=text] {
 
 .crete {
     grid-area: img2;
+}
+
+.crete img{
+    min-height: 100%;
 }
 
 .athens {

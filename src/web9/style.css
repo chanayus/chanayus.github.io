@@ -29,6 +29,7 @@ img {
 
 h1 {
     font-size: 50px;
+    margin: 25px 0;
 }
 
 button {
@@ -36,6 +37,7 @@ button {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: #fff;
+    outline: none;
 }
 
 button:hover {
@@ -94,6 +96,7 @@ nav {
     color: #fff;
     padding-left: 5px;
     font-family: 'Raleway', sans-serif;
+    outline: none;
     
 }
 
@@ -126,7 +129,7 @@ header {
 }
 
 .header-image img {
-    max-width: 80%;
+    max-width: 75%;
 }
 
 .header-image {
@@ -139,12 +142,14 @@ header {
     border-radius: 5px;
     border: none;
     padding: 15px 40px;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 #ourservice-header {
     background: #fcc302;
     border: 2px solid #fff;
-    margin-left: 20px;
 }
 
 
@@ -223,7 +228,7 @@ header {
     height: 40%;
     background: #fcc302;
     bottom: -20;
-    right: -1%;
+    right: -2%;
     z-index: -1;
 }
 
@@ -270,6 +275,9 @@ header {
     margin: 10 10;
 }
 
+.doctor-text h3{
+    font-weight: 400;
+}
 
 /* --------------------------------------------------- */
 
@@ -322,6 +330,7 @@ header {
 
 .post-item {
     margin: 30 10;
+    border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -333,6 +342,10 @@ header {
 
 .green-text {
     color: #00bec9;
+}
+
+.post-image img{
+    border-radius: 5px;
 }
 
 
@@ -352,23 +365,43 @@ footer a {
 
 footer li {
     list-style: none;
+    padding: 4px 0;
+    
+}
+.about, .service, .title-footer{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .footer-flex {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
     align-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
 }
 .title-footer input{
     border: none;
     padding: 7px 0;
-    color: #fff;
     padding-left: 5px;
     font-family: 'Raleway', sans-serif;
+    outline: none;
 }
 .title-footer button{
     padding: 7px 7px;
     background: #00bec9;
     border: none;
+
+}
+.footer-flex ul li h2{
+    margin: 10px 0;
+    font-size: 27px;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 20px;
+    }
 
 }
