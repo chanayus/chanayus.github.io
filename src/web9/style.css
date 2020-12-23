@@ -129,7 +129,8 @@ header {
 }
 
 .header-image img {
-    max-width: 75%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .header-image {
