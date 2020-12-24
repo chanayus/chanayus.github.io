@@ -95,7 +95,8 @@ nav {
     color: #fff;
 }
 .search{
-    display: inline-block;
+    display: flex;
+    height: 130px;
 }
 .search input[type=text] {
     background: #fcc302;
