@@ -130,13 +130,9 @@ header {
 
 .header-image img {
     max-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
-.header-image {
-    display: flex;
-    justify-content: center;
-}
 
 .header-text button {
     background: #00bec9;
