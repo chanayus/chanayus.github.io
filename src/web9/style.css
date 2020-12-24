@@ -95,7 +95,8 @@ nav {
     color: #fff;
 }
 .search{
-    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 .search input[type=text] {
     background: #fcc302;
