@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    font-family: 'Yeseva One', cursive;
+    text-shadow: 1px 1px 1px #222;
+}
+
+li {
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Yeseva One', cursive;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+button{
+    cursor: pointer;
+}
+p, button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+/* --------- HeaderSession ---------- */
+
+header{
+    background: url("./image/Bg.png");
+    background-size: cover;
+}
+nav{
+    background: linear-gradient(0deg, rgba(255,201,0,0) 30%, rgba(20,20,20,1) 115%);
+    padding: 0 10px;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-menu li{
+    padding: 0 15px;
+}
+.nav-social li{
+    padding: 0 7px;
+}
+.nav-menu, .nav-social{
+    display: flex;
+    align-items: center;
+}
+.intro-text h1{
+    padding-top: 100px;
+    font-size: clamp(45px, 7.5vw, 70px);
+    color: #fff;
+    text-shadow: 2px 1px 3px #222;
+    line-height: 100px;
+}
+.intro-text img{
+    padding: 40px 0;
+}
+
+.nav-logo{
+    padding: 20px;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+.button-group button{
+    padding: 15px 2%;
+    border: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.black-button{
+    background: rgba(0,0,0,0.5);
+    
+}
+
+.white-button{
+    background: rgba(255,255,255,0.3);
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-menu button{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #FFF;
+    padding: 20px;
+}
+.nav-social i{
+    font-size: 25px;
+    padding: 0 5px;
+}
+/* --------- RightFood ---------- */
+
+.right-food-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+
+}
+.right-food-text{
+
+    flex-basis: 500px;
+    text-align: center;
+} 
+
+.right-food-text img{
+    padding: 30px 0;
+} 
+
+.right-food-text h2{
+    color: #cc9900;
+    font-size: 35px;
+} 
+
+.right-food-img{
+    text-align: center;
+}
+.right-food-img img{
+    max-width: 80%;
+}
+
+/* --------- ingredients ---------- */
+
+.ingredients{
+    background: url("./image/bg2.png");
+    background-size: cover;
+    
+}
+.ingredients-flex{
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px 0;
+}
+.ingredients-text{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    text-align: center;
+    flex-basis: 570px;
+    padding: 80px;
+}
+.ingredients-text img{
+    padding: 20px 5px;
+}
+
+/* --------- Menu ---------- */
+
+
+
+/* --------- Reviews ---------- */
+
+.reviews{
+    background: url("./image/bg3.png");
+    background-size: cover;
+    padding: 15% 0;
+    
+}
+
+.reviews-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.reviews-text{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10%;
+    width: 75%;
+
+}
+
+.reviews-text h1{
+    padding: 25px 0;
+    font-size: 37px;
+}
+
+.reviews-text p span{
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgba(255,255,255,0.7);
+}
+
+/* --------- form --------- */
+
+.form-flex{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+    padding: 50px 0;
+}
+.form-image-flex{
+    display: flex;
+}
+
+.form-image-flex img{
+    max-width: 90%;
+}
+
+.form-content h2{
+    color: #cc9900;
+}
+.form-content{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.form-content img{
+    padding: 25px 0;
+}
+
+/* --------- form --------- */
+
+footer{
+    background: rgba(20,20,20,1);
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-flex{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footer-flex div{
+    flex: 1;
+    padding: 20px;
+    flex-basis: 320px;
+}
+
+.footer-flex div img{
+    padding: 15px 0;
+}
+
+
+
+/* -------------- for mobile -------------- */
+.mobile-menu-select{
+    background: #222;
+    height: 100%;
+    width: 100%;
+    top: -1500;
+    position: fixed;
+    transition: 0.75s;
+}
+
+.mobile-menu-select .nav-menu{
+    flex-direction: column;
+
+}
+
+.mobile-menu-select .nav-menu li a{
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #222;
+}
+
+.mobile-menu-select .nav-menu li{
+    padding: 10px 0;
+}
+
+.mobile-menu-header{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.mobile-menu-header img{
+    max-width: 70%;
+    padding: 20px 0;
+}
+
+.mobile-menu-header .nav-logo{
+    padding: 0;
+}
+
+.mobile-menu-header button{
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    color: #fff;
+}
+
+.mobile-menu-select .nav-menu .nav-social li{
+    padding: 20px;
+}
+
+@media only screen and (max-width:960px){
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: initial;
+    }
+}
