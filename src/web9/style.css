@@ -130,7 +130,7 @@ header {
 
 .header-image img {
     width: 75%;
-    object-fit: cover;
+    -webkit-object-fit: cover;
 }
 
 .header-image {
