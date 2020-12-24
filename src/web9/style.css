@@ -96,7 +96,6 @@ nav {
 }
 .search{
     display: flex;
-    height: 130px;
 }
 .search input[type=text] {
     background: #fcc302;
