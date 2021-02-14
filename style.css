@@ -98,3 +98,24 @@ a{
     border: 2px solid #3995b6;
     color: #01a9d8;
 }
+
+.github-button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    background: black;
+    border-radius: 100%;
+    border: 2px solid #111;
+}
+
+.github-button i{
+    font-size: 47px;
+    color: #EEE;
+    transition: 0.25s;
+}
+
+.github-button i:hover{
+
+    transform: rotate(20deg);
+}
