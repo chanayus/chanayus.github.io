@@ -236,13 +236,19 @@ input[type=text] {
     transition: 0.35s;
 }
 
-.place-flex img:hover+.placename-flex,
-.place-grid img:hover+.placename-grid,
-.placename-grid:hover,
-.placename-flex:hover {
-    top: 50%;
+.place-grid:hover .placename-grid,
+.place-flex:hover .placename-flex
+{
+    transition: 0.5s;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+
+}
+
+.place-grid:hover,
+.place-flex:hover{
+    background: red;
+    z-index: 10;
 }
 
 

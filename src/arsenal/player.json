@@ -1,0 +1,186 @@
+{
+    "goalkeeper" : [
+        {
+            "name" : "Bernd Leno",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p80201.png",
+            "nationality" : "Germany",
+            "position" : "Goalkeeper",
+            "number" : "1"
+        },
+        {
+            "name" : "Mat Ryan",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p131897.png",
+            "nationality" : "Australia",
+            "position" : "Goalkeeper",
+            "number" : "33"
+        },
+        {
+            "name" : "Rúnar Alex Rúnarsson",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p115918.png",
+            "nationality" : "Iceland",
+            "position" : "Goalkeeper",
+            "number" : "13"
+        }
+    ],
+    "defender" : [
+        {
+            "name" : "Héctor Bellerín",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p98745.png",
+            "nationality" : "Spain",
+            "position" : "Defender",
+            "number" : "2"
+        },
+        {
+            "name" : "Kieran Tierney",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p192895.png",
+            "nationality" : "Scotland",
+            "position" : "Defender",
+            "number" : "3"
+        },
+        {
+            "name" : "Rob Holding",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p156074.png",
+            "nationality" : "England",
+            "position" : "Defender",
+            "number" : "16"
+        },
+        {
+            "name" : "Calum Chambers",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p101184.png",
+            "nationality" : "England",
+            "position" : "Defender",
+            "number" : "21"
+        },
+        {
+            "name" : "David Luiz",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p41270.png",
+            "nationality" : "Brazil",
+            "position" : "Defender",
+            "number" : "23"
+        },
+        {
+            "name" : "Gabriel Magalhães",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p226597.png",
+            "nationality" : "Brazil",
+            "position" : "Defender",
+            "number" : "6"
+        },
+        {
+            "name" : "Cédric Soares",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p58822.png",
+            "nationality" : "Portugal",
+            "position" : "Defender",
+            "number" : "17"
+        },
+        {
+            "name" : "Pablo Marí",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p92371.png",
+            "nationality" : "Spain",
+            "position" : "Defender",
+            "number" : "22"
+        }
+    ],
+    "midfielder" : [
+        {
+            "name" : "Granit Xhaka",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p84450.png",
+            "nationality" : "Switzerland",
+            "position" : "Midfielder",
+            "number" : "34"
+        },
+        {
+            "name" : "Thomas Partey",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p167199.png",
+            "nationality" : "Ghana",
+            "position" : "Midfielder",
+            "number" : "18"
+        },
+        {
+            "name" : "Emile Smith Rowe",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p209289.png",
+            "nationality" : "England",
+            "position" : "Midfielder",
+            "number" : "32"
+        },
+        {
+            "name" : "Martin Ødegaard",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p184029.png",
+            "nationality" : "Norway",
+            "position" : "Midfielder",
+            "number" : "11"
+        },
+        {
+            "name" : "Dani Ceballos",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p182539.png",
+            "nationality" : "Spain",
+            "position" : "Midfielder",
+            "number" : "8"
+        },
+        {
+            "name" : "Bukayo Saka",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p223340.png",
+            "nationality" : "England",
+            "position" : "Midfielder",
+            "number" : "7"
+        },
+        {
+            "name" : "Mohamed Elneny",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p153256.png",
+            "nationality" : "Egypt",
+            "position" : "Midfielder",
+            "number" : "25"
+        }
+    ],
+    "forward" : [
+        {
+            "name" : "Pierre-Emerick Aubameyang",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p54694.png",
+            "nationality" : "Gabon",
+            "position" : "Forward",
+            "number" : "14"
+        },
+        {
+            "name" : "Alexandre Lacazette",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p59966.png",
+            "nationality" : "France",
+            "position" : "Forward",
+            "number" : "9"
+        },
+        {
+            "name" : "Nicolas Pépé",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p195735.png",
+            "nationality" : "Ivory Coast",
+            "position" : "Forward",
+            "number" : "19"
+        },
+        {
+            "name" : "Willian",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p47431.png",
+            "nationality" : "Brazil",
+            "position" : "Forward",
+            "number" : "12"
+        },
+        {
+            "name" : "Gabriel Martinelli",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p444145.png",
+            "nationality" : "Brazil",
+            "position" : "Forward",
+            "number" : "35"
+        },
+        {
+            "name" : "Reiss Nelson",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p200641.png",
+            "nationality" : "England",
+            "position" : "Forward",
+            "number" : "24"
+        },
+        {
+            "name" : "Eddie Nketiah",
+            "img": "https://resources.premierleague.com/premierleague/photos/players/250x250/p205533.png",
+            "nationality" : "England",
+            "position" : "Forward",
+            "number" : "30"
+        }
+    ]
+}
+

@@ -1,5 +1,15 @@
 [
     {
+        "name": "Arsenal",
+        "image": "/img/arsenal.jpg",
+        "url": "./src/arsenal/index.html"
+    },
+    {
+        "name": "ReactMovie",
+        "image": "/img/reactmovie.jpg",
+        "url": "https://chanayus.github.io/ReactMovie/"
+    },
+    {
         "name": "SpaceX",
         "image": "/img/15.PNG",
         "url": "https://kittipot321.github.io/SpaceXRocketApp/"
