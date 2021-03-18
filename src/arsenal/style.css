@@ -61,6 +61,7 @@ header{
 
 .img-content img{
     max-width: 70%;
+    object-fit: cover;
 }
 
 .img-content{
