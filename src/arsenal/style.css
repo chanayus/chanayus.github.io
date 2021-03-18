@@ -59,16 +59,14 @@ header{
     margin: 0;
 }
 
-.img-content img{
+.content-flex img{
     max-width: 70%;
+    height: auto;
     object-fit: cover;
-}
-
-.img-content{
-    display: flex;
-    justify-content: center;
     z-index: 10;
 }
+
+
 
 .circle{
     width: 100%;
