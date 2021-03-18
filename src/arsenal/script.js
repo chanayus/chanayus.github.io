@@ -2,7 +2,7 @@
 const fetchData = async() =>{
     const data = await fetch("./player.json")
     let player = await data.json()
-    console.log(player)
+
     player.goalkeeper.map((value) => addPlayer(value, "goalkeeper"))
     player.defender.map((value) => addPlayer(value, "defender"))
     player.midfielder.map((value) => addPlayer(value, "midfielder"))
@@ -28,12 +28,7 @@ const addPlayer = (value, role) => {
     card.appendChild(content)
 
     position.appendChild(card)
-    console.log(position)
 
-}
-
-const appPositionPlayer = () =>{
-    console.log("goal")
 }
 
 fetchData();
