@@ -15,7 +15,7 @@ const getData = () =>{
             const devContent = document.createElement("DIV")
             devContent.className = "web-content"
 
-            devContent.innerHTML = `<h2>${value.name}</h2><a href="${value.url}"><button class="view-button">View</button></a>`
+            devContent.innerHTML = `<h2>${value.name}</h2><a href="${value.url}" class="view-button">View</a>`
 
             divItem.style.backgroundImage = `url('${value.image}')`
             divItem.appendChild(divImg)
