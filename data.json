@@ -1,4 +1,10 @@
 [
+    
+    {
+        "name": "Figmaland",
+        "image": "/img/figma.jpg",
+        "url": "./src/figmaland/index.html"
+    },
     {
         "name": "Arsenal",
         "image": "/img/arsenal.jpg",
@@ -65,6 +71,7 @@
         "image": "/img/13.PNG",
         "url": "./src/web15/index.html"
     }
+    
     
 
 ]
