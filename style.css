@@ -22,10 +22,18 @@ button{
 .text-header{
     font-size: 10vmin;
     color: rgb(0,0,0,0);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.75px;
     -webkit-text-stroke-color: #000;
+    position: relative;
 }
-
+.text-header::before{
+    content: "";
+    width: 150px;
+    height: 3px;
+    bottom: 0;
+    background: #333;
+    position: absolute;
+}
 .menu{
     display: flex;
     overflow: hidden;
@@ -171,7 +179,6 @@ header{
         padding: 5vh 0 0 0;
     }
 }
-
 
 
 
