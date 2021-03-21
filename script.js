@@ -2,6 +2,12 @@
 const linkUrl = "./data.json"
 const mainContainer = document.getElementById("main-content")
 
+
+
+gsap.to(".profile", { x: "0%", duration: 1, delay: 0, ease: "expo.out"});
+
+gsap.to(".profile", { x: "0%",scale : 1, duration: 1, delay: 1,  ease: "expo.out"});
+
 const getData = () =>{
     axios.get(linkUrl)
     .then((response) => 
