@@ -34,6 +34,32 @@ button{
     background: #333;
     position: absolute;
 }
+
+ /* header section */
+
+header{
+    background: linear-gradient(-45deg, #ff887c, #b11d4e);
+	background-size: 400% 400%;
+    height: 100vh;
+    color: #FFF;
+    position: relative;
+    animation: gradient 10s ease infinite;  
+    box-shadow: 0 10px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 .menu{
     display: flex;
     overflow: hidden;
@@ -54,6 +80,10 @@ button{
     font-size: 1.2rem;
 
     
+}
+nav{
+    position: absolute;
+    width: 100%;
 }
 .logo{
     width: 50px;
@@ -82,33 +112,17 @@ button{
     padding-top: 20px;
 }
 
-header{
-    background: linear-gradient(-45deg, #ff887c, #b11d4e);
-	background-size: 400% 400%;
-    height: 100vh;
-    color: #FFF;
-    animation: gradient 10s ease infinite;  
-    box-shadow: 0 10px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
+.profile{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
 }
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
 
 .profile-container{
     display: flex;
-    padding: 25vh 0 0 0;
     justify-content: space-around;
+    width: 100%;
 
 }
 .profile-img img{
@@ -117,17 +131,21 @@ header{
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: 0.25s;
-   
 }
 .profile-img{
     width: 300px;
     text-align: center;
-    margin-right: 20px;
     transition: 0.5s;
+    padding-right: 20px;
 }
 
 .profile-img:hover{
     transform: rotate(5deg) scale(1.1);
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .name{
@@ -142,7 +160,7 @@ header{
     font-weight: 200;
     font-size: 5vmin;
     margin: 0;
-    color: #EAEAEA;
+    color: #f1f1f1;
 }
 .scroll{
     position: absolute;
@@ -171,17 +189,17 @@ header{
 }
 
 
-@media (max-height: 480px){
+@media (max-height: 450px){
     .profile-img img{
         width: 50%;
+
     }
-    .profile-container{
-        padding: 5vh 0 0 0;
-    }
+    
 }
 
 
 
+ /* Skill section */
 
 .skill-flex{
     display: flex;
@@ -206,7 +224,7 @@ header{
     color: #333;
 }
 
-
+ /* Portfolio section */
 
 .main-content{
     display: flex;
@@ -300,6 +318,8 @@ header{
 }
 
 
+ /* footer section */
+
 .footer-flex{
     display: flex;
     justify-content: center;
@@ -315,7 +335,7 @@ footer{
 }
 
 .footer-flex a i{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     transition: 0.25s;
     color: rgba(255,255,255,0.53);
 }
@@ -326,7 +346,10 @@ footer{
     color: rgba(255,255,255,1);
 }
 
-/* width */
+
+ /* Scrollbar section */
+
+    /* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
