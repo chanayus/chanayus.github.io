@@ -1,74 +1,78 @@
 [
-    
+    {
+        "name": "MNTN",
+        "image": "/img/mntn.webp",
+        "url": "./src/mntn/index.html"
+    },
     {
         "name": "Figmaland",
-        "image": "/img/figma.JPG",
+        "image": "/img/figma.webp",
         "url": "./src/figmaland/index.html"
     },
     {
         "name": "Arsenal",
-        "image": "/img/arsenal.jpg",
+        "image": "/img/arsenal.webp",
         "url": "./src/arsenal/index.html"
     },
     {
         "name": "ReactMovie",
-        "image": "/img/reactmovie.jpg",
+        "image": "/img/reactmovie.webp",
         "url": "https://chanayus.github.io/ReactMovie/"
     },
     {
         "name": "SpaceX",
-        "image": "/img/15.PNG",
+        "image": "/img/15.webp",
         "url": "https://kittipot321.github.io/SpaceXRocketApp/"
     },
     {
         "name": "Excel Basic",
-        "image": "/img/16.png",
+        "image": "/img/16.webp",
         "url": "https://poohcid.github.io/webtech_Excel/ExcelBasic/"
     },
     {
         "name": "Lambda",
-        "image": "/img/14.PNG",
+        "image": "/img/14.webp",
         "url": "./src/lambda/index.html"
     },
     {
         "name": "Atia",
-        "image": "/img/11.PNG",
+        "image": "/img/11.webp",
         "url": "./src/web13/index.html"
     },
     {
         "name": "Agencia",
-        "image": "/img/10.PNG",
+        "image": "/img/10.webp",
         "url": "./src/web11/index.html"
     },
     {
         "name": "AXIT",
-        "image": "/img/6.PNG",
+        "image": "/img/6.webp",
         "url": "./src/web6/index.html"
     },
     {
         "name": "Burger",
-        "image": "/img/7.PNG",
+        "image": "/img/7.webp",
         "url": "./src/web7/index.html"
     },
     {
         "name": "Pet",
-        "image": "/img/8.PNG",
+        "image": "/img/8.webp",
         "url": "./src/web9/index.html"
     },
     {
         "name": "Funny Flake",
-        "image": "/img/9.PNG",
+        "image": "/img/9.webp",
         "url": "./src/web10/index.html"
     },
       
     {
         "name": "FAUN",
-        "image": "/img/12.PNG",
+        "image": "/img/12.webp",
         "url": "./src/web14/index.html"
     },
     {
         "name": "Travel",
-        "image": "/img/13.PNG",
+        "image": "/img/13.webp",
         "url": "./src/web15/index.html"
     }
     
