@@ -377,7 +377,7 @@ footer{
         font-size: 2.5vmax;
         color: #FFF;
         height: 100%;
-        background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0));
+        background: linear-gradient(0deg, rgba(0,0,0,1) 17.5%, rgba(0,0,0,0));
         display: flex;
         justify-content: flex-end;
         padding-bottom: 10px;
@@ -389,5 +389,10 @@ footer{
         width: 50%;
         margin: 10px auto;
     }
-    
+    .web-item{
+        background-position: 50% 100%;
+    }
+    .web-content h2{
+        text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    }
 }
