@@ -38,7 +38,7 @@ button{
  /* header section */
 
 header{
-    background: linear-gradient(-45deg, #ff887c, #b11d4e);
+    background: linear-gradient(-45deg, #5b7e51, #a56c21);
 	background-size: 400% 400%;
     height: 100vh;
     color: #FFF;
@@ -322,11 +322,15 @@ nav{
 
 .footer-flex{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-flex p{
+    color: rgba(255,255,255,0.75);
 }
 footer{
     background: #111;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .footer-flex a{

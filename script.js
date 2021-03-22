@@ -11,6 +11,23 @@ gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease
 gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
 
 
+const headerBgColor = () =>{
+    const date = new Date();
+    const day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    const dayColor = day[date.getDay()]
+    const colorBg = {
+        "Sunday" : "linear-gradient(-45deg, #ff887c, #b11d4e)",
+        "Monday" : "linear-gradient(-45deg, #d8bba0, #444)",
+        "Tuesday": "linear-gradient(-45deg, #ec719a, #c48989)",
+        "Wednesday": "linear-gradient(-45deg, #5b7e51, #8f8f8f)",
+        "Thursday" : "linear-gradient(-45deg, #dbb480, #a56c21)",
+        "Friday" : "linear-gradient(-45deg, #6ba7ca, #1a5c83)",
+        "Saturday" : "linear-gradient(-45deg, #7c7c7c, #272727)"
+    }
+    const header = document.querySelector("header");
+    header.style.backgroundImage = `${colorBg[dayColor]}`;
+}
+
 const getData = () =>{
     axios.get(linkUrl)
     .then((response) => 
@@ -35,4 +52,6 @@ const getData = () =>{
     )
 }
 
+
+headerBgColor();
 getData();
