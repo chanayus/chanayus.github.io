@@ -2,6 +2,12 @@
 const linkUrl = "./data.json"
 const mainContainer = document.getElementById("main-content")
 
+window.onload = () =>{
+    wrapper.style.display = "none"
+    gsap.to("#wrapper-transition", { opacity : 0,duration: 0.75, delay: 0,  ease: "expo.out"});
+
+}
+
 gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
 gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
 gsap.to(".profile-container", { scale : 1,duration: 1.5, delay: 1,  ease: "expo.out"});
@@ -54,17 +60,16 @@ const gotoElement = (destination) => { document.getElementById(destination).scro
 const pageNavigate = (num) => {
     let tagA = document.querySelector(`#link-id-${num}`)
     let url = tagA.getAttribute("link")
-    document.body.style.background = "#111";
-    document.body.style.opacity = 0;
+    let wrapper = document.querySelector(`#wrapper-transition`)
+    wrapper.style.display = "initial"
+    gsap.to("#wrapper-transition", { opacity : 1,duration: 0.75, delay: 0,  ease: "expo.out"});
     setTimeout(()=> {
         window.location.href = url;
     }, 500)
     setTimeout(()=> {
-        document.body.style.background = "#F2F1E6";
-        document.body.style.opacity = 1;
-    }, 600)
+       
+    }, 750)
     
 }
-
 headerBgColor();
 getData();
