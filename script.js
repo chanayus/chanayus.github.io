@@ -5,7 +5,6 @@ const mainContainer = document.getElementById("main-content")
 window.onload = () =>{
     wrapper.style.display = "none"
     gsap.to("#wrapper-transition", { opacity : 0,duration: 0.75, delay: 0,  ease: "expo.out"});
-
 }
 
 gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
