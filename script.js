@@ -65,11 +65,7 @@ const pageNavigate = (num) => {
     gsap.to("#wrapper-transition", { opacity : 1,duration: 0.75, delay: 0,  ease: "expo.out"});
     setTimeout(()=> {
         window.location.href = url;
-    }, 500)
-    setTimeout(()=> {
-       
-    }, 750)
-    
+    }, 1000)
 }
 headerBgColor();
 getData();
