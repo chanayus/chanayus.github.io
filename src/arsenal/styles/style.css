@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background: #111;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+nav {
+  padding: 15px 0px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+nav:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+nav .nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: initial;
+      flex-wrap: initial;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .nav-flex img {
+  max-width: 90px;
+}
+
+nav .nav-flex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-flex ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 10px 15px;
+}
+
+nav .nav-flex ul li a {
+  text-decoration: none;
+  color: #E0E0E0;
+  position: relative;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  padding: 5px;
+}
+
+nav .nav-flex ul li a:before {
+  position: absolute;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  content: "";
+  border-radius: 2px;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #FFF;
+}
+
+nav .nav-flex ul li a:hover::before {
+  width: 100%;
+}
+
+nav .nav-flex ul li a:hover {
+  color: #111;
+}
+
+.main-content {
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: initial;
+      flex-wrap: initial;
+  overflow: hidden;
+}
+
+.text-content-bg {
+  width: 550px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0 20px 2%;
+}
+
+.text-content {
+  overflow: hidden;
+  z-index: 11;
+  padding: 25px;
+  color: #FFF;
+}
+
+.text-content h1 {
+  letter-spacing: 1px;
+  line-height: 0.9;
+  font-size: 9vmin;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.text-content p {
+  font-weight: 200;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+#slide1 {
+  background-image: url("../image/arsenal.jpg");
+  background-attachment: fixed;
+}
+
+#slide2 {
+  background-image: url("../image/stadium.jpg");
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#slide2 .text-content-bg {
+  background: #153659;
+  height: 100%;
+  padding: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background: #b10819;
+  -webkit-box-shadow: inset 0px 0px 400px black;
+          box-shadow: inset 0px 0px 400px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: center;
+      flex-wrap: center;
+}
+
+@media (max-width: 860px) {
+  #slide2 .text-content-bg {
+    background: rgba(0, 0, 0, 0.8);
+    height: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+#slide3 {
+  background: rgba(0, 0, 0, 0.8);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.thophy-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: initial;
+      flex-wrap: initial;
+}
+
+.thophy-flex .thophy-img {
+  width: 350px;
+}
+
+.thophy-flex .thophy-img img {
+  width: 350px;
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer .footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -ms-flex-wrap: initial;
+      flex-wrap: initial;
+}
+
+footer a {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+footer a i {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+footer a:hover i {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

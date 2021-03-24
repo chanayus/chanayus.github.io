@@ -8,7 +8,7 @@ body{
     margin: 0;
     padding: 0;
     background:#F2F1E6;
-
+    transition: 0.5s;
 }
 .container{
     max-width: 1200px;
@@ -38,7 +38,6 @@ button{
  /* header section */
 
 header{
-    background: linear-gradient(-45deg, #5b7e51, #a56c21);
 	background-size: 400% 400%;
     height: 100vh;
     color: #FFF;
@@ -62,7 +61,6 @@ header{
 
 .menu{
     display: flex;
-    overflow: hidden;
 }
 
 .menu h1{
@@ -77,9 +75,7 @@ header{
 .menu li a {
     text-decoration: none;
     color: #FFF;
-    font-size: 1.2rem;
-
-    
+    font-size: 1.2rem; 
 }
 nav{
     position: absolute;
@@ -93,7 +89,7 @@ nav{
 }
 .menu li a::before {
     content: "";
-    bottom: 0;
+    bottom: -5px;
     width: 0%;
     height: 2px;
     position: absolute;

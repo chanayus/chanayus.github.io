@@ -3,13 +3,10 @@ const linkUrl = "./data.json"
 const mainContainer = document.getElementById("main-content")
 
 gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
-
 gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
 gsap.to(".profile-container", { scale : 1,duration: 1.5, delay: 1,  ease: "expo.out"});
-
 gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
 gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
-
 
 const headerBgColor = () =>{
     const date = new Date();
@@ -18,7 +15,7 @@ const headerBgColor = () =>{
     const colorBg = {
         "Sunday" : "linear-gradient(-45deg, #ff887c, #b11d4e)",
         "Monday" : "linear-gradient(-45deg, #d8bba0, #444)",
-        "Tuesday": "linear-gradient(-45deg, #ec719a, #c48989)",
+        "Tuesday": "linear-gradient(-45deg, #8f858e, #884c81)",
         "Wednesday": "linear-gradient(-45deg, #5b7e51, #8f8f8f)",
         "Thursday" : "linear-gradient(-45deg, #dbb480, #a56c21)",
         "Friday" : "linear-gradient(-45deg, #6ba7ca, #1a5c83)",
@@ -31,7 +28,7 @@ const headerBgColor = () =>{
 const getData = () =>{
     axios.get(linkUrl)
     .then((response) => 
-        response.data.map((value) => {
+        response.data.map((value,index) => {
             const divItem = document.createElement("DIV")
             divItem.className = "web-item"
             
@@ -40,8 +37,8 @@ const getData = () =>{
             
             const devContent = document.createElement("DIV")
             devContent.className = "web-content"
-
-            devContent.innerHTML = `<h2>${value.name}</h2><a href="${value.url}" class="view-button">View</a>`
+            let link = index;
+            devContent.innerHTML = `<h2>${value.name}</h2><a href="javascript: pageNavigate(${link});" link="${value.url}" id="link-id-${link}" class="view-button">View</a>`
 
             divItem.style.backgroundImage = `url('${value.image}')`
             divItem.appendChild(divImg)
@@ -52,6 +49,15 @@ const getData = () =>{
     )
 }
 
+const gotoElement = (destination) => { document.getElementById(destination).scrollIntoView(); }
+
+const pageNavigate = (num) => {
+    let tagA = document.querySelector(`#link-id-${num}`)
+    let url = tagA.getAttribute("link")
+    document.body.style.background = "#111";
+    document.body.style.opacity = 0;
+    setTimeout(()=> { window.location.href = url;}, 500)
+}
 
 headerBgColor();
 getData();

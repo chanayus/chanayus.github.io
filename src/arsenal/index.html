@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -13,38 +14,72 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <div class="nav-flex">
-                    <div class="nav-logo">
-                        <img src="./image/logo.png" alt="">
-                    </div>
+    <nav>
+        <div class="container">
+            <div class="nav-flex">
+                <div class="nav-logo">
+                    <img src="./image/logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="" class="nav-menu">Squad</a></li>
+                    <li><a href="" class="nav-menu">League Table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content">
+        <div class="slide" id="slide1">
+            <div class="text-content-bg">
+                <div class="text-content">
+                    <h1>Arsenal</h1>
+                    <p> is a professional football club based in Islington, London, England that plays in the Premier
+                        League, the top flight of English football The club has won 13 league titles. (including one
+                        unbeaten title)</p>
                 </div>
             </div>
-        </nav>
-
-        <div class="content-flex">
-            <div class="text-content">
-                <h1>Arsenal</h1>
-                <p> is a professional football club based in Islington, London, England that plays in the Premier
-                    League, the top flight of English football The club has won 13 league titles. (including one
-                    unbeaten title)</p>
-            </div>
-            <img src="./image/auba.png" alt="">
         </div>
-        <div class="circle"></div>
-    </header>
-
-    <section class="stadium">
-        <div class="text-content stadium-content">
-            <div class="container">
-                <h1>EMIRATES STADIUM</h1>
-                <p>is a football stadium in Highbury, England, and the home of Arsenal. With a capacity of 60,704</p>
+        </div>
+        <div class="slide" id="slide2">
+            <div class="text-content-bg" id="content-slide2">
+                <div class="text-content">
+                    <h1>EMIRATES <br>
+                        STADIUM</h1>
+                    <p>is a football stadium in Highbury, England, and the home of Arsenal. With a capacity of 60,704
+                    </p>
+                </div>
             </div>
         </div>
+
     </section>
-    <section class="squad">
+
+
+
+
+
+
+    <!-- <footer>
+            <div class="container">
+                <div class="footer-flex">
+                    <a href="https://www.facebook.com/Arsenal/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/Arsenal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/arsenal/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Arsenal_F.C.">
+                        <i class="fab fa-wikipedia-w"></i>
+                    </a>
+                </div>
+            </div>
+        </footer> -->
+
+
+
+    <!-- <section class="squad">
 
         <div class="container" id="squad-container">
             <h1>Goalkeeper</h1>
@@ -68,26 +103,14 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <footer>
-        <div class="container">
-            <div class="footer-flex">
-                <a href="https://www.facebook.com/Arsenal/">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/Arsenal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/arsenal/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://en.wikipedia.org/wiki/Arsenal_F.C.">
-                    <i class="fab fa-wikipedia-w"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 
