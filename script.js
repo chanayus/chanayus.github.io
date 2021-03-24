@@ -56,8 +56,14 @@ const pageNavigate = (num) => {
     let url = tagA.getAttribute("link")
     document.body.style.background = "#111";
     document.body.style.opacity = 0;
-    setTimeout(()=> {window.location.href = url;}, 500)
-    document.body.style.opacity = 1;
+    setTimeout(()=> {
+        window.location.href = url;
+    }, 500)
+    setTimeout(()=> {
+        document.body.style.background = "#F2F1E6";
+        document.body.style.opacity = 1;
+    }, 600)
+    
 }
 
 headerBgColor();
