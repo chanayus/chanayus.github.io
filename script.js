@@ -18,7 +18,7 @@ const headerBgColor = () =>{
         "Monday" : "linear-gradient(-45deg, #d8bba0, #444)",
         "Tuesday": "linear-gradient(-45deg, #8f858e, #884c81)",
         "Wednesday": "linear-gradient(-45deg, #5b7e51, #8f8f8f)",
-        "Thursday" : "linear-gradient(-45deg, #dbb480, #a56c21)",
+        "Thursday" : "linear-gradient(-45deg, #dbb480, #d88e2c)",
         "Friday" : "linear-gradient(-45deg, #6ba7ca, #1a5c83)",
         "Saturday" : "linear-gradient(-45deg, #7c7c7c, #272727)"
     }
@@ -52,6 +52,16 @@ const getData = () =>{
 
 const gotoElement = (destination) => { document.getElementById(destination).scrollIntoView(); }
 
+
+window.addEventListener("scroll", () =>{
+    const nav = document.querySelector("nav")
+    const navLogo = document.querySelector("#nav-logo")
+    const enable = "background: rgba(0,0,0,0.65);backdrop-filter: blur(5px);"
+    const disable = "background: rgba(0,0,0,0);backdrop-filter: blur(0px);"
+    nav.style.cssText = window.scrollY > 0 ? enable : disable;
+    navLogo.style.width = window.scrollY > 0 ? "34px" : "47px";
+
+})
 
 headerBgColor();
 getData();

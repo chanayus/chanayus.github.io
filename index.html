@@ -14,20 +14,21 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav>
-            <div class="container">
-                <div class="nav-flex">
-                    <div class="logo">
-                        <img src="./img/logo.png" alt="">
-                    </div>
-                    <ul class="menu">
-                        <li><a href="javascript: gotoElement('skills');">Skills</a></li>
-                        <li><a href="javascript: gotoElement('portfolio');">Portfolio</a></li>
-                    </ul>
+    <nav>
+        <div class="container">
+            <div class="nav-flex">
+                <div class="logo" id="nav-logo">
+                    <img src="./img/logo.png" alt="">
                 </div>
+                <ul class="menu">
+                    <li><a href="javascript: gotoElement('skills');">Skills</a></li>
+                    <li><a href="javascript: gotoElement('portfolio');">Portfolio</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <header id="header">
+
         <div class="container">
             <section class="profile">
 
@@ -43,7 +44,7 @@
                 </div>
                 <div class="scroll">
                     <i class="fas fa-chevron-down down-icon"></i>
-                    <a href="#skills">Scroll Down</a>
+                    <a href="javascript: gotoElement('skills');">Scroll Down</a>
                 </div>
             </section>
         </div>

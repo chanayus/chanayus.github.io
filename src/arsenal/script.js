@@ -11,6 +11,7 @@ const initialPage = () => {
     
     gsap.to("#content-slide2", { xPercent: 100,duration: 0, delay: 0,  ease: "expo.out"});
     gsap.to("#content-slide2 .text-content", { xPercent: 100,duration: 0, delay: 0,  ease: "expo.out"});
+    
 }
 
 const fetchData = async() =>{
@@ -50,8 +51,8 @@ window.addEventListener('scroll', () => {
     let screenPosition = window.innerHeight
 
     if(contentPosition < screenPosition-(screenPosition*0.5)){
-        gsap.to("#content-slide2", { xPercent: 0,duration: 1, delay: 0.25,  ease: "expo.out"});
-        gsap.to("#content-slide2 .text-content", { xPercent: 0,duration: 1.25, delay: 1,  ease: "expo.out"});
+        gsap.to("#content-slide2", { xPercent: 0,duration: 0.5, delay: 0.25,  ease: "expo.out"});
+        gsap.to("#content-slide2 .text-content", { xPercent: 0, duration: 1, delay: 1,  ease: "expo.out"});
     }
 
 });
