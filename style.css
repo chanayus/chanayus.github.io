@@ -151,7 +151,7 @@ nav{
 }
 
 .profile-img:hover{
-    transform: rotate(5deg) scale(1.1);
+    transform: scale(1.1);
 }
 .profile-name{
     display: flex;
@@ -162,6 +162,7 @@ nav{
 .name{
     font-size: 10vmin;
     margin: 0;
+    letter-spacing: -0.02em;
     font-weight: 600;
     line-height: 1.1;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
