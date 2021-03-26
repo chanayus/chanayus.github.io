@@ -1,90 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
-@mixin flex($justify, $align, $wrap) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-wrap: $wrap;
-}
-
-*{
-    scroll-behavior: smooth;
-}
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    overflow: hidden;
-    background: #111;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-}
-::-webkit-scrollbar {
-    display: none;
-  }
-
-.container{
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-nav{
-    padding: 0px;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    transition: 0.25s;
-    &:hover{
-        background: rgba(0,0,0,0.4);
-        backdrop-filter: blur(5px);
-    }    
-    
-    .nav-flex{
-        @include flex(space-between, center, initial);
-        transition: 0.5s;
-        img{
-            max-width: 90px;
-        }
-        ul{
-            display: flex;
-            li{
-                display: flex;
-                list-style: none;
-                padding: 10px 15px;
-                a{
-                    text-decoration: none;
-                    color: #E0E0E0;
-                    position: relative;
-                    transition: 0.25s;
-                    padding: 5px;
-                    &:before{
-                        position: absolute;
-                        transition: 0.25s ease-in-out;
-                        content: "";
-                        border-radius: 2px;
-                        width: 0%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        z-index: -1;
-                        
-                        background : #FFF;
-                    }
-                    &:hover::before{ 
-                        width: 100%;
-                    }
-                    &:hover{
-                        color: #111;
-                    }
-                }
-            }
-        }
-    }
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import "main";
 .main-content{
     height: 100%;
 }
@@ -111,7 +26,7 @@ nav{
     h1{
         letter-spacing: 1px;
         line-height: 0.9;
-        font-size: 9vmin;
+        font-size: clamp(45px,9vmin, 9vmin);
         margin: 20px 0;
         text-transform:uppercase;
         text-shadow: 2px 2px 7px rgba(0,0,0,0.3);
@@ -127,33 +42,34 @@ nav{
 
 #slide1{
     background-image: url("../image/arsenal.jpg");
+    background-position-x: 60%;
     background-attachment: fixed;
 }
 #slide2{
     background-image: url("../image/stadium.jpg");
     width: 100%;
     justify-content: flex-end;
-    
+   
     transition: 0.25s;
     .text-content-bg{
-        background: #153659;
         height: 100%;
-        padding: 0;
+        padding: 50px;
         transition: 0.25s;
         background: #b10819;
         box-shadow: inset 0px 0px 400px rgba(0, 0, 0, 1);
         @include flex(initial, center, center);
         @media (max-width: 860px) {
-            background:rgba(0, 0, 0, 0.8);
+            background:rgba(0, 0, 0, 0.55);
             height: auto;
             box-shadow: none;  
+            padding: 0px;
+            height: 100%;
        }
     }
 
 }
 #slide3{
     background:rgba(0, 0, 0, 0.8);
-    // background-image: url("../image/cele.jpg");
     background-attachment: fixed;
     position: relative;
 

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@mixin flex($justify, $align, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    // overflow: hidden;
+    background: #111;
+    flex-direction: column;
+    justify-content: space-between;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+nav{
+    padding: 0px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    transition: 0.25s;
+    &:hover{
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(5px);
+    }    
+    
+    .nav-flex{
+        @include flex(space-between, center, initial);
+        transition: 0.5s;
+        img{
+            max-width: 80px;
+        }
+        ul{
+            display: flex;
+            li{
+                display: flex;
+                list-style: none;
+                padding: 10px 15px;
+                a{
+                    text-decoration: none;
+                    color: #E0E0E0;
+                    position: relative;
+                    transition: 0.25s;
+                    padding: 5px;
+                    &:before{
+                        position: absolute;
+                        transition: 0.25s ease-in-out;
+                        content: "";
+                        border-radius: 2px;
+                        width: 0%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        
+                        background : #FFF;
+                    }
+                    &:hover::before{ 
+                        width: 100%;
+                    }
+                    &:hover{
+                        color: #111;
+                    }
+                }
+            }
+        }
+    }
+}

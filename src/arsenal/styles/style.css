@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap");
 * {
   scroll-behavior: smooth;
@@ -12,9 +13,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   background: #111;
-  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -66,7 +65,7 @@ nav .nav-flex {
 }
 
 nav .nav-flex img {
-  max-width: 90px;
+  max-width: 80px;
 }
 
 nav .nav-flex ul {
@@ -153,7 +152,7 @@ nav .nav-flex ul li a:hover {
 .text-content h1 {
   letter-spacing: 1px;
   line-height: 0.9;
-  font-size: 9vmin;
+  font-size: clamp(45px, 9vmin, 9vmin);
   margin: 20px 0;
   text-transform: uppercase;
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
@@ -167,6 +166,7 @@ nav .nav-flex ul li a:hover {
 
 #slide1 {
   background-image: url("../image/arsenal.jpg");
+  background-position-x: 60%;
   background-attachment: fixed;
 }
 
@@ -181,9 +181,8 @@ nav .nav-flex ul li a:hover {
 }
 
 #slide2 .text-content-bg {
-  background: #153659;
   height: 100%;
-  padding: 0;
+  padding: 50px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
   background: #b10819;
@@ -204,10 +203,12 @@ nav .nav-flex ul li a:hover {
 
 @media (max-width: 860px) {
   #slide2 .text-content-bg {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.55);
     height: auto;
     -webkit-box-shadow: none;
             box-shadow: none;
+    padding: 0px;
+    height: 100%;
   }
 }
 
