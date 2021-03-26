@@ -2,6 +2,8 @@
 
 const initialPage = () => {
     window.scrollTo(0, 0);
+    const loader = document.querySelector("#loader")
+    loader.style.display = "none"
     gsap.fromTo("nav", {opacity: 0}, { opacity: 1 ,duration: 1, delay: 1.5,  ease: "expo.out"});
     setTimeout(() =>{ document.body.style.overflow = "initial"}, 1600)
     
@@ -26,13 +28,12 @@ window.addEventListener('scroll', () => {
 
 });
 
+window.addEventListener("load", () =>{
+    initialPage()
+})
 
-const changePage = () => {
 
-}
 
-changePage();
-initialPage();
 
 
 

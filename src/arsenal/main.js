@@ -4,3 +4,4 @@ window.addEventListener("scroll", () =>{
     const disable = "background: rgba(0,0,0,0); backdrop-filter: blur(0px);"
     nav.style.cssText = window.scrollY > 0 ? enable : disable;
 })
+

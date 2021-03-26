@@ -3,11 +3,21 @@ const linkUrl = "./data.json"
 const mainContainer = document.getElementById("main-content")
 
 
-gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
-gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
-gsap.to(".profile-container", { scale : 1,duration: 1.5, delay: 1,  ease: "expo.out"});
-gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
-gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
+const initial = () =>{
+    window.scrollTo(0, 0);
+    const loader = document.querySelector("#loader")
+    loader.style.opacity = "0";
+    setTimeout(()=> {loader.remove();}, 350)
+
+    gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
+    gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
+    gsap.to(".profile-container", { scale : 1,duration: 1.5, delay: 1,  ease: "expo.out"});
+    gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
+    gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
+    
+    
+}
+
 
 const headerBgColor = () =>{
     const date = new Date();
@@ -62,6 +72,11 @@ window.addEventListener("scroll", () =>{
     navLogo.style.width = window.scrollY > 0 ? "34px" : "47px";
 
 })
+
+window.addEventListener("load", () =>{
+    initial()
+})
+
 
 headerBgColor();
 getData();
