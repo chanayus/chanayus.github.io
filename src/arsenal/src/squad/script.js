@@ -15,12 +15,17 @@ const addPlayer = (value, role, posColor) => {
     let img = document.createElement("img")
     let content = document.createElement("div")
     let position = document.getElementById(role)
+    let loader = document.createElement("div")
 
+    loader.className = "img-loader-container"
     card.className = "card"
     playerImg.className = "player-img"
     content.className = "content"
     playerNumber.className = "player-number"
+    img.setAttribute("loading", "lazy")
+
     
+    loader.innerHTML= "<div class='img-loader'></div>"
     content.style.borderLeft = `10px solid ${posColor}`
     playerNumber.innerHTML = ` <h1>${value.number}</h1>`
     img.src= `${value.img}`
@@ -29,10 +34,17 @@ const addPlayer = (value, role, posColor) => {
     `
    
     content.appendChild(playerNumber)
+    playerImg.appendChild(loader)
     playerImg.appendChild(img)
     card.appendChild(playerImg)
     card.appendChild(content)
     position.appendChild(card)
+
+    img.addEventListener("load", () =>{
+        img.style.opacity = "1";
+        loader.remove()
+    })
+
 
 }
 

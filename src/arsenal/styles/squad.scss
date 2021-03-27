@@ -30,17 +30,21 @@ header{
     grid-template-columns: repeat( auto-fill, minmax(280px, 1fr) );
     display: grid;
     .card{
-
         height: 350px;
         background: linear-gradient(-45deg, rgb(32, 32, 32), #b8b8b8);
         display: flex;
         justify-content: center; 
         flex-direction: column;
         .player-img{
+            width: 100%;
             flex: 1;
             text-align: center;
             overflow: hidden;
+            position: relative;
             img{
+                transition: 0.25s;
+                min-width: 280px;
+                opacity: 0;
                 width:80%;   
                 object-fit: cover;
             }
@@ -55,7 +59,7 @@ header{
             overflow: hidden;
             position: relative;
             h1{
-                width: 60%;
+                width: 65%;
                 font-size: 1.4rem;
                 margin: 0;
                 color: #f0f0f0;
@@ -77,3 +81,30 @@ header{
     }
     
 }
+.img-loader-container{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    .img-loader{
+        border: 10px solid transparent;
+        border-radius: 50%;
+        border-top: 10px solid #111;
+        border-right: 10px solid #111;
+        border-bottom: 10px solid #111;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 1.5s linear infinite; /* Safari */
+        animation: spin 1.5s  infinite;
+    }
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg) ;}
+      }
+}
+
