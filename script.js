@@ -8,14 +8,14 @@ const initial = () =>{
     const loader = document.querySelector("#loader")
     loader.style.opacity = "0";
     setTimeout(()=> {loader.remove();}, 350)
+    document.body.style.overflow = "initial";
 
     gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
     gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
     gsap.to(".profile-container", { scale : 1,duration: 1.5, delay: 1,  ease: "expo.out"});
     gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
     gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
-    
-    
+
 }
 
 
@@ -66,8 +66,8 @@ const gotoElement = (destination) => { document.getElementById(destination).scro
 window.addEventListener("scroll", () =>{
     const nav = document.querySelector("nav")
     const navLogo = document.querySelector("#nav-logo")
-    const enable = "background: rgba(0,0,0,0.65); backdrop-filter: blur(5px);"
-    const disable = "background: rgba(0,0,0,0); backdrop-filter: blur(0px);"
+    const enable = "background: rgba(0,0,0,0.65); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);"
+    const disable = "background: rgba(0,0,0,0); -webkit-backdrop-filter: blur(0px); backdrop-filter: blur(0px);"
     nav.style.cssText = window.scrollY > 0 ? enable : disable;
     navLogo.style.width = window.scrollY > 0 ? "34px" : "47px";
 
