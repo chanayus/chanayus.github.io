@@ -24,7 +24,7 @@ const headerBgColor = () =>{
     const day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     const dayColor = day[date.getDay()]
     const colorBg = {
-        "Sunday" : "linear-gradient(-45deg, #ff887c, #b11d4e)",
+        "Sunday" : "linear-gradient(-45deg, #ff887c, #b52626)",
         "Monday" : "linear-gradient(-45deg, #d8bba0, #444)",
         "Tuesday": "linear-gradient(-45deg, #8f858e, #884c81)",
         "Wednesday": "linear-gradient(-45deg, #5b7e51, #8f8f8f)",
