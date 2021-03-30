@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,41 +20,39 @@
             <div></div>
         </div>
     </div>
-    <nav>
-        <div class="container">
-            <div class="nav-flex">
-                <div class="logo" id="nav-logo">
-                    <img src="./img/logo.png" alt="">
-                </div>
-                <ul class="menu">
-                    <li><a href="javascript: gotoElement('skills');">Skills</a></li>
-                    <li><a href="javascript: gotoElement('portfolio');">Portfolio</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
     <header id="header">
+        <nav>
+            <div class="container">
+                <div class="nav-flex">
+                    <div class="logo" id="nav-logo">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <ul class="menu">
+                        <li><a href="javascript: gotoElement('skills');">Skills</a></li>
+                        <li><a href="javascript: gotoElement('portfolio');">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-        <div class="container">
+        <div class="container" id="container-profile">
             <section class="profile">
-
                 <div class="profile-container">
                     <div class="profile-img">
-                        <img src="./img/IMG_0298.webp" alt="">
+                        <img src="./img/IMG_0298.webp" alt="" id="img-profile">
                     </div>
                     <div class="profile-name">
-                        <h1 class="name">Chanayus</h1>
-                        <h1 class="name">Nuiad</h1>
+                        <h1 class="name" data-text="Chanayus">Chanayus</h1>
+                        <h1 class="name" data-text="Nuiad">Nuiad</h1>
                         <h1 class="address">Samutprakan, Thailand</h1>
                     </div>
-                </div>
-                <div class="scroll">
-                    <i class="fas fa-chevron-down down-icon"></i>
-                    <a href="javascript: gotoElement('skills');" class="scrollDown-button">Scroll Down</a>
-                </div>
             </section>
         </div>
-
+        <div class="scroll">
+            <a href="javascript: gotoElement('skills');" class="scrollDown-button">Scroll Down</a>
+            <i class="fas fa-chevron-down down-icon"></i>
+        </div>
     </header>
     <div class="container">
         <h1 class="text-header" id="skills">Skills</h1>

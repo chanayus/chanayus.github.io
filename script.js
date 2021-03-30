@@ -69,7 +69,7 @@ window.addEventListener("scroll", () =>{
     const enable = "background: rgba(0,0,0,0.65); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);"
     const disable = "background: rgba(0,0,0,0); -webkit-backdrop-filter: blur(0px); backdrop-filter: blur(0px);"
     nav.style.cssText = window.scrollY > 0 ? enable : disable;
-    navLogo.style.width = window.scrollY > 0 ? "34px" : "47px";
+    navLogo.style.width = window.scrollY > 0 ? "34px" : "45px";
 
 })
 
@@ -78,5 +78,5 @@ window.addEventListener("load", () =>{
 })
 
 
-headerBgColor();
+// headerBgColor();
 getData();

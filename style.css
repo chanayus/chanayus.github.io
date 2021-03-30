@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
 *{
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
@@ -13,7 +13,7 @@ body{
     overflow: hidden;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -42,10 +42,13 @@ button{
  /* header section */
 
 header{
+    background: linear-gradient(-45deg, #224875, #272727);
 	background-size: 400% 400%;
     height: 100vh;
-    color: #FFF;
     position: relative;
+    display: flex;
+    overflow: hidden;
+    color: #FFF;
     animation: gradient 10s ease infinite;  
     box-shadow: 0 10px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
 }
@@ -80,19 +83,23 @@ header{
     text-decoration: none;
     color: #FFF;
     font-size: 1.2rem; 
+    font-weight: 300;
 }
 nav{
     position: fixed;
     z-index: 99;
+    padding-top: 5px;
     top: 0;
     width: 100%;
 }
 .logo{
-    width: 47px;
+    width: 45px;
+    display: flex;
+    align-items: center;
     transition: 0.25s;
 }
 .logo img{
-    width: 100%;
+    width:100%;
 }
 .menu li a::before {
     content: "";
@@ -131,28 +138,34 @@ nav{
     height: 100%;
 }
 
+#container-profile{
+    padding: 0 10px;
+    width: 100%;
+}
+
 .profile-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
     width: 100%;
-
+    max-height: 50%;
+    height: 100%;
 }
-.profile-img img{
-    width: 100%;
+
+.profile-img{
     max-width: 300px;
-    border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    padding-right: 10px;
     transition: 0.25s;
 }
-.profile-img{
-    width: 300px;
-    text-align: center;
-    transition: 0.5s;
-    padding-right: 20px;
-}
 
-.profile-img:hover{
-    transform: scale(1.1);
+.profile-img img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.25s;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .profile-name{
     display: flex;
@@ -160,18 +173,23 @@ nav{
     justify-content: center;
 }
 
-.name{
-    font-size: 10vmin;
-    margin: 0;
-    letter-spacing: -0.02em;
-    font-weight: 600;
-    line-height: 1.1;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-    
+.profile-img img:hover{
+    border-radius: 20%;
 }
 
+.name{
+    font-size: clamp(32px ,11vmin, 140px);
+    margin: 0;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    line-height: 1;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+
+}
+
+
 .address{
-    font-weight: 200;
+    font-weight: 100;
     font-size: 5vmin;
     margin: 0;
     color: #f1f1f1;
@@ -226,18 +244,15 @@ nav{
 .scroll a{
     text-decoration: none;
     color: #FFF;
+    font-weight: 300;
 }
 
 
-@media (max-height: 450px){
-    .profile-img img{
-        width: 50%;
-
+@media (max-height: 640px){
+    .profile-img{
+        width:30%;
     }
-    
 }
-
-
 
  /* Skill section */
 
@@ -373,11 +388,13 @@ nav{
 footer{
     background: #111;
     padding: 25px 0;
+    font-weight: 300;
 }
 
 .footer-flex a{
     margin: 0;
     padding: 0 3vmax;
+    
 }
 
 .footer-flex a i{
@@ -397,7 +414,6 @@ footer{
 
     /* width */
 ::-webkit-scrollbar {
-    width: 10px;
     display: none;
   }
 
