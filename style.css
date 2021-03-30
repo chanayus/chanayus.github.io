@@ -88,7 +88,7 @@ header{
 nav{
     position: fixed;
     z-index: 99;
-    padding-top: 5px;
+    padding: 5px 0;
     top: 0;
     width: 100%;
 }
