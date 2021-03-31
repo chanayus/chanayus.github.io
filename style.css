@@ -160,6 +160,7 @@ nav{
 
 .profile-img{
     max-width: 300px;
+    width: 30%;
     padding-right: 10px;
     transition: 0.25s;
 }
@@ -252,11 +253,6 @@ nav{
 }
 
 
-@media (max-height: 640px){
-    .profile-img{
-        width:30%;
-    }
-}
 
  /* Skill section */
 .skill-container{
@@ -337,7 +333,6 @@ nav{
 .web-content h2, .view-button{
     margin: 0 0 0 40px;
 }
-
 
 .view-button{
     border: none;
