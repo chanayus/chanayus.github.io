@@ -20,7 +20,6 @@
             <div></div>
         </div>
     </div>
-
     <header id="header">
         <nav>
             <div class="container">
@@ -37,7 +36,7 @@
         </nav>
 
         <div class="container" id="container-profile">
-            <section class="profile">
+            <div class="profile">
                 <div class="profile-container">
                     <div class="profile-img">
                         <img src="./img/IMG_0298.webp" alt="" id="img-profile">
@@ -48,16 +47,17 @@
                         <h2 class="address">Samutprakan, Thailand</h2>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
         <div class="scroll">
             <a href="javascript: gotoElement('skills');" class="scrollDown-button">Scroll Down</a>
             <i class="fas fa-chevron-down down-icon"></i>
         </div>
     </header>
-    <div class="container">
-        <h1 class="text-header" id="skills">Skills</h1>
-        <div class="skill-flex">
+
+    <section class="container skill-container" id="skills">
+        <h1 class="text-header" data-aos="fade-up">Skills</h1>
+        <div class="skill-flex" data-aos="fade-up">
             <div class="skill-item">
                 <div class="skill-icon"><i class="fab fa-html5"></i></div>
                 <div class="skill-name">HTML</div>
@@ -91,13 +91,15 @@
                 <div class="skill-name">Git</div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <h1 class="text-header" id="portfolio">Portfolio</h1>
+    <section class="portfolio-container" id="portfolio">
+        <div class="container">
+            <h1 class="text-header">Portfolio</h1>
+        </div>
+        <div class="main-content" id="main-content"></div>
+    </section>
 
-    </div>
-    <div class="main-content" id="main-content"></div>
 
     <footer>
         <div class="footer-flex">
@@ -105,6 +107,7 @@
             <p>&copy; 2021 Chanayus Nuiad</p>
         </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
