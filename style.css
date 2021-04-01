@@ -102,6 +102,7 @@ nav{
     display: flex;
     align-items: center;
     transition: 0.25s;
+    cursor: pointer;
 }
 .logo img{
     width:100%;
