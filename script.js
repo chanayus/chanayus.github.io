@@ -13,6 +13,7 @@ const initial = () =>{
     gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
     gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
     gsap.to(".profile-container", { scale : 1,duration: 1.5, delay: 1,  ease: "expo.out"});
+    gsap.to("#header", { backgroundImage : " linear-gradient(-45deg, #224875, #272727)",duration: 1, delay: 1,  ease: "expo.out"});
     gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
     gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
 

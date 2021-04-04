@@ -47,7 +47,7 @@ section{
     padding-top: 50px;
 }
 header{
-    background: linear-gradient(-45deg, #224875, #272727);
+    background: #111;
 	background-size: 400% 400%;
     height: 100vh;
     position: relative;
