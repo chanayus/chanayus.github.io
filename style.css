@@ -10,7 +10,6 @@ body{
     background:#F2F1E6;
     transition: 0.5s;
     position: relative;
-    overflow: hidden;
 }
 
 .container{

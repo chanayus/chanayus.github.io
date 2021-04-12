@@ -8,7 +8,6 @@ const initial = () =>{
     const loader = document.querySelector("#loader")
     loader.style.opacity = "0";
     setTimeout(()=> {loader.remove();}, 350)
-    document.body.style.overflow = "initial";
 
     gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
     gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
@@ -17,24 +16,6 @@ const initial = () =>{
     gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
     gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
 
-}
-
-
-const headerBgColor = () =>{
-    const date = new Date();
-    const day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    const dayColor = day[date.getDay()]
-    const colorBg = {
-        "Sunday" : "linear-gradient(-45deg, #ff887c, #b52626)",
-        "Monday" : "linear-gradient(-45deg, #d8bba0, #444)",
-        "Tuesday": "linear-gradient(-45deg, #8f858e, #884c81)",
-        "Wednesday": "linear-gradient(-45deg, #5b7e51, #8f8f8f)",
-        "Thursday" : "linear-gradient(-45deg, #dbb480, #d88e2c)",
-        "Friday" : "linear-gradient(-45deg, #6ba7ca, #1a5c83)",
-        "Saturday" : "linear-gradient(-45deg, #7c7c7c, #272727)"
-    }
-    const header = document.querySelector("header");
-    header.style.backgroundImage = `${colorBg[dayColor]}`;
 }
 
 const getData = () =>{
@@ -78,6 +59,4 @@ window.addEventListener("load", () =>{
     initial()
 })
 
-
-// headerBgColor();
 getData();

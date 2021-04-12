@@ -1,5 +1,10 @@
 [
     {
+        "name": "Landify",
+        "image": "/img/landify.webp",
+        "url": "./src/landify/index.html"
+    },
+    {
         "name": "MNTN",
         "image": "/img/mntn.webp",
         "url": "./src/mntn/index.html"

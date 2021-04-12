@@ -12,13 +12,27 @@
 </head>
 
 <body>
+    <div class="mobile-section" id="mobile-section">
+        <ul class="mobile-menu">
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">More</a></li>
+        </ul>
+        <ul class="mobile-menu store">
+            <li><img src="./img/playstore.svg" alt=""></li>
+            <li><img src="./img/appstore.svg" alt=""></li>
+        </ul>
+    </div>
     <nav>
         <div class="container">
             <div class="nav-flex">
                 <div class="logo">
                     <img src="./img/Dark.svg" alt="">
                 </div>
-                <ul class="menu">
+                <ul class="desktop-menu menu">
                     <li><a href="">About</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">Pricing</a></li>
@@ -26,10 +40,13 @@
                     <li><a href="">Jobs</a></li>
                     <li><a href="">More</a></li>
                 </ul>
-                <ul class="store">
+                <ul class="desktop-menu store">
                     <li><img src="./img/playstore.svg" alt=""></li>
                     <li><img src="./img/appstore.svg" alt=""></li>
                 </ul>
+                <button class="mobile-menu-button" id="mobile-menu-button" onclick="menuToggle()">
+                    
+                </button>
             </div>
         </div>
     </nav>
@@ -87,42 +104,54 @@
             </div>
             <div class="feature-flex">
                 <div class="feature-items">
-                    <div class="feature-img"></div>
+                    <div class="feature-img">
+                        <img src="./img/01.svg" alt="">
+                    </div>
                     <div class="feature-text">
                         <h2>Robust workflow</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
                     </div>
                 </div>
                 <div class="feature-items">
-                    <div class="feature-img"></div>
+                    <div class="feature-img">
+                        <img src="./img/02.svg" alt="">
+                    </div>
                     <div class="feature-text">
                         <h2>Flexibility</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
                     </div>
                 </div>
                 <div class="feature-items">
-                    <div class="feature-img"></div>
+                    <div class="feature-img">
+                        <img src="./img/03.svg" alt="">
+                    </div>
                     <div class="feature-text">
                         <h2>User friendly</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
                     </div>
                 </div>
                 <div class="feature-items">
-                    <div class="feature-img"></div>
+                    <div class="feature-img">
+                        <img src="./img/04.svg" alt="">
+                    </div>
                     <div class="feature-text">
                         <h2>Multiple layouts</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
                     </div>
                 </div>
                 <div class="feature-items">
-                    <div class="feature-img"></div>
+                    <div class="feature-img">
+                        <img src="./img/05.svg" alt="">
+                    </div>
                     <div class="feature-text">
                         <h2>Better components</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
                     </div>
                 </div>
                 <div class="feature-items">
-                    <div class="feature-img"></div>
+                    <div class="feature-img">
+                        <img src="./img/08.svg" alt="">
+                    </div>
                     <div class="feature-text">
                         <h2>Well organised</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p>
@@ -204,28 +233,36 @@
                 </div>
                 <div class="achieve-flex">
                     <div class="achieve-items">
-                        <div class="achieve-img"></div>
+                        <div class="achieve-img">
+                            <img src="./img/01.svg" alt="">
+                        </div>
                         <div class="achieve-text">
                             <h2>10,000+</h2>
                             <p>Downloads per day</p>
                         </div>
                     </div>
                     <div class="achieve-items">
-                        <div class="achieve-img"></div>
+                        <div class="achieve-img">
+                            <img src="./img/04.svg" alt="">
+                        </div>
                         <div class="achieve-text">
                             <h2>2 Million</h2>
                             <p>User</p>
                         </div>
                     </div>
                     <div class="achieve-items">
-                        <div class="achieve-img"></div>
+                        <div class="achieve-img">
+                            <img src="./img/07.svg" alt="">
+                        </div>
                         <div class="achieve-text">
                             <h2>500+</h2>
                             <p>Clients</p>
                         </div>
                     </div>
                     <div class="achieve-items">
-                        <div class="achieve-img"></div>
+                        <div class="achieve-img">
+                            <img src="./img/07.svg" alt="">
+                        </div>
                         <div class="achieve-text">
                             <h2>140</h2>
                             <p>Countries</p>
@@ -240,7 +277,9 @@
         <div class="container">
             <div class="headline-flex">
                 <div class="headline-img">
-                    <img src="./img/iphone.svg" alt="">
+                    <div class="headline-phone">
+                        <img src="./img/iphone.svg" alt="">
+                    </div>
                 </div>
                 <div class="headline-text">
                     <h2>Headline</h2>
@@ -277,7 +316,7 @@
     <section class="download">
         <div class="container">
             <div class="download-flex">
-                <div class="download-header">
+                <div class="download-items download-header">
                     <h1>Manage your projects <br> from your mobile</h1>
                     <p>Download the app to manage your projects, keep track of the progress and complete tasks without
                         procastinating. Stay on track and complete on time!</p>
@@ -291,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="download-img">
+                <div class="download-items download-img">
                     <img src="./img/iphone2.svg" alt="">
                     <img src="./img/iphone.svg" alt="">
                 </div>
@@ -303,7 +342,9 @@
         <div class="container">
             <div class="footer-flex">
                 <div class="footer-items">
-                    <div class="footer-logo"></div>
+                    <div class="footer-logo">
+                        <img src="./img/logo.svg" alt="">
+                    </div>
                     <ul class="footer-menu">
                         <li><a href="">Download Now</a></li>
                         <li><a href="">License</a></li>
@@ -326,6 +367,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
