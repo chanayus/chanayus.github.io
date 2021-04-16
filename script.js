@@ -55,8 +55,8 @@ window.addEventListener("scroll", () =>{
 
 })
 
-window.addEventListener("load", () =>{
-    initial()
-})
+document.addEventListener("DOMContentLoaded", (event) => {
+    window.onload = () => {initial()} 
+});
 
 getData();
