@@ -9,10 +9,15 @@ const initial = () =>{
     loader.style.opacity = "0";
     setTimeout(()=> {loader.remove();}, 350)
 
-    gsap.to(".profile-container", {x: "-150%",scale: 0.6 , duration: 0, delay: 0});
-    gsap.to(".profile-container", { x: "0%",duration: 1.5, delay: 0,  ease: "expo.out"});
-    gsap.to(".profile-container", { scale : 1,duration: 1.5, delay: 1,  ease: "expo.out"});
-    gsap.to("#header", { backgroundImage : " linear-gradient(-45deg, #224875, #272727)",duration: 1, delay: 1,  ease: "expo.out"});
+    gsap.to(".name", {opacity: 0, duration: 0, delay: 0});
+    gsap.to(".name", {opacity: 1,duration: 1, delay: 0.5,  ease: "expo.out"});
+    
+    gsap.to(".profile-img", {width: "0", duration: 0, delay: 0,  ease: "expo.out"});
+    gsap.to(".profile-img", {width: "auto", duration: 2, delay: 0.25,  ease: "expo.out"});
+    gsap.to(".name-mobile", {opacity: "0", duration: 0, delay: 0});
+    gsap.to(".name-mobile", {opacity: "1",duration: 1, delay: 0.5,  ease: "expo.out"});
+    gsap.to("header", {background: "rgb(25, 25, 25)", duration: 0, delay: 0,  ease: "expo.out"});
+    gsap.to("header", {background: "rgb(50, 53, 44)", duration: 1, delay: 1,  ease: "expo.out"});
     gsap.fromTo(".nav-flex", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
     gsap.fromTo(".scroll", {opacity: 0}, { opacity: 1,duration: 1, delay: 1,  ease: "expo.out"});
 

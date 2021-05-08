@@ -58,27 +58,6 @@
         "name": "Burger",
         "image": "/img/7.webp",
         "url": "./src/web7/index.html"
-    },
-    {
-        "name": "Pet",
-        "image": "/img/8.webp",
-        "url": "./src/web9/index.html"
-    },
-    {
-        "name": "Funny Flake",
-        "image": "/img/9.webp",
-        "url": "./src/web10/index.html"
-    },
-      
-    {
-        "name": "FAUN",
-        "image": "/img/12.webp",
-        "url": "./src/web14/index.html"
-    },
-    {
-        "name": "Travel",
-        "image": "/img/13.webp",
-        "url": "./src/web15/index.html"
     }
     
     
