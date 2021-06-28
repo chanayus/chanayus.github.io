@@ -12,9 +12,9 @@ body{
 }
 
 .container{
-    max-width: 1550px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     position: relative;
 }
 
@@ -46,7 +46,7 @@ section{
     padding-top: 50px;
 }
 header{
-    background: rgb(50, 53, 44);
+    background: rgb(0, 0, 0);
     height: 100vh;
     position: relative;
     display: flex;
@@ -92,6 +92,7 @@ nav{
     transition: 0.25s;
     cursor: pointer;
 }
+
 .logo img{
     width:100%;
 }
@@ -132,6 +133,40 @@ nav{
     height: 100%;
 }
 
+.logo-text{
+    position: absolute;
+    right: 0;
+    top: -5%;
+
+}
+
+
+
+.logo-text h1{
+    margin: 0;
+    line-height: 0.6;
+    font-weight: 300;
+    color: #666;
+    transition: 0.08s;
+}
+.c{
+    left: -5%;
+    position: relative;
+    font-size: 800px;
+}
+.n{
+    right: -22%;
+    bottom: -50px;
+    position: relative;
+    font-size: 800px;
+}
+
+@media (max-width: 1100px){
+    .logo-text h1{
+        color: #222222;
+    }
+}
+
 #container-profile{
     z-index: 2;
     width: 100%;
@@ -139,76 +174,38 @@ nav{
 
 .profile-container{
     display: flex;
-    justify-content:center;
-    align-items: center;
     max-width: 100%;
     width: 100%;
-    overflow: hidden;
     position: relative;
     
 }
 
-.profile-img{
-    max-width: 600px;
-    width: 100%;
+.profile-flex{
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: relative;
-   
-}
-
-.profile-img img{
     width: 100%;
-    transition: 0.25s;
-    height: 70vh; 
-    object-fit: cover;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.profile-name{
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    position: relative;
-    padding: 10px 0px;
-    padding-bottom: 10vmin;
-    display: none;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
 
-.name{
-    font-size:100px;
+.profile-info h1{
+    font-size: clamp(32px,15vmin,90px);
     margin: 0;
     letter-spacing: -0.05em;
     font-weight: 500;
     line-height: 1;
     white-space:nowrap;
-    overflow: hidden;
-    transform: rotate(-90deg);
-    position: absolute;
     text-shadow: 2px 1px 7px rgba(0,0,0,0.3);
 }
-.name-mobile{
-    font-size: clamp(32px ,11vmin, 100px);
-    text-align: right;
+
+.profile-info h2{
     margin: 0;
-    letter-spacing: -0.05em;
-    font-weight: 500;
+    font-size: clamp(20px,7vmin,35px);
+    letter-spacing: -0.02em;
+    font-weight: 200;
     line-height: 1;
     white-space:nowrap;
-    overflow: hidden;
-    padding-right: 3px;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-}
-.name:first-child{
-    left: -42.5%;
-    bottom: 32%;   
-}
-
-.name:last-child{
-    right: -25%;
-    top: 15%;
-    transform: rotate(90deg);
+    text-shadow: 2px 1px 7px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 768px){
@@ -229,21 +226,11 @@ nav{
         object-position: 100% 40%;
     }
 }
-
-.address{
-    font-weight: 100;
-    font-size: 4.5vmin;
-    margin: 0;
-    color: #f1f1f1;
-    white-space:nowrap;
-}
 .scroll{
     font-size: 1.2rem;
     display: flex;
     position: absolute;
     bottom: 5%;
-    
-    
 }
 .scrollDown-button{
     position: relative;

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio | Chanayus Nuiad</title>
 </head>
 
@@ -24,6 +25,7 @@
         </div>
     </div>
     <header id="header">
+
         <nav>
             <div class="container">
                 <div class="nav-flex">
@@ -37,18 +39,21 @@
                 </div>
             </div>
         </nav>
-
+        <div class="logo-text">
+            <h1 class="c">C</h1>
+            <h1 class="n">N</h1>
+        </div>
         <div class="container" id="container-profile">
+
             <div class="profile">
                 <div class="profile-container">
-                    <div class="profile-name">
-                        <h2 class="name-mobile" data-text="Chanayus">Chanayus</h2>
-                        <h2 class="name-mobile" data-text="Nuiad">Nuiad</h2>
-                    </div>
-                    <div class="profile-img">
-                        <h2 class="name" data-text="Chanayus">Chanayus</h2>
-                        <img src="./img/profile.webp" alt="" id="img-profile" width="300" height="100%">
-                        <h2 class="name" data-text="Nuiad">Nuiad</h2>
+                    <div class="profile-flex">
+                        <div class="profile-info">
+                            <h2>Hi, I'm <span>&#128293;</span></h2>
+                            <h1>Chanayus</h1>
+                            <h1>Nuiad</h1>
+                            <h2>Samutprakarn, Thailand</h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,7 +65,7 @@
 
     </header>
 
-    <section class="container skill-container" id="skills">
+    <section class="container skill-container" id="skills" data-aos="fade-up">
         <h1 class="text-header" data-aos="fade-up">Skills</h1>
         <div class="skill-flex" data-aos="fade-up">
             <div class="skill-item">
@@ -100,7 +105,7 @@
 
     <section class="portfolio-container" id="portfolio">
         <div class="container">
-            <h1 class="text-header">Portfolio</h1>
+            <h1 class="text-header" data-aos="fade-up">Portfolio</h1>
         </div>
         <div class="main-content" id="main-content"></div>
     </section>
@@ -115,6 +120,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 
