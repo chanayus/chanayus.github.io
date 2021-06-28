@@ -9,10 +9,10 @@ const initial = () =>{
     loader.style.opacity = "0";
     setTimeout(()=> {loader.remove();}, 350)
 
-    gsap.to(".c", {x: "120%", duration: 0, delay: 0,  ease: "expo.out"});
-    gsap.to(".c", {x: "0%", duration: 2.2, delay: 0,  ease: "expo.out"});
-    gsap.to(".n", {y: "120%", duration: 0, delay: 0,  ease: "expo.out"});
-    gsap.to(".n", {y: "0%", duration: 2, delay: 0,  ease: "expo.out"});
+    gsap.to(".c", {x: "150%", duration: 0, delay: 0,  ease: "expo.out"});
+    gsap.to(".c", {x: "0%", duration: 2.75, delay: 0,  ease: "expo.out"});
+    gsap.to(".n", {y: "150%", duration: 0, delay: 0,  ease: "expo.out"});
+    gsap.to(".n", {y: "0%", duration: 2.75, delay: 0,  ease: "expo.out"});
     gsap.to(".profile-info", {height: 0, duration: 0, delay: 0,  ease: "expo.out"});
     gsap.to(".profile-info", {height: "auto", duration: 2.25, delay: 0.1,  ease: "expo.out"});
     gsap.to("header", {background: "rgb(25, 25, 25)", duration: 0, delay: 0,  ease: "expo.out"});
